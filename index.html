@@ -1,7 +1,8 @@
 <html>
 <head>
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,300|Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Racing+Sans+One" rel="stylesheet">
 <style>
 body {
 	background: no-repeat fixed;
@@ -16,48 +17,56 @@ body {
 }
 
 a {
-	color: #dddddd;
-	text-decoration: none;
+	color: white;
 }
 
 h1 {
-	font-size: 3em;
-	line-height: 80%;
-	margin-top: .1em;
-	margin-bottom: .1em;
-	font-weight: bold;
+	font-size: 1.5em;
+	font-weight: 100;
+	margin-top: 1em;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	_font-family: 'Racing Sans One', cursive;
+	font-family: 'Open Sans', sans-serif;
+	color: 00AAFF;
 }
 
-#content {
-	font-size: 1.2em;
-	width: 55%;
-	top: 5%;
-	left: 35%;
-	position: absolute;
+th, td {
+	margin: 0;
+	vertical-align: top;
+	padding: .5em;
 }
 
-#name, #text {
-	padding: 5%;
-	width: 100%;
-	background-color: rgba(50, 30, 40, .95);
+.rounded {
+	border-radius: 8px;
+}
+
+#projects {
+	background-color: rgba(0,0,0,.8);	
 }
 
 #name {
-	color: 1D5CED;
+	color: 00AAFF;
 	text-align: center;
-	font-size: 8vw;
-	font-family: 'Bangers', cursive;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
+	margin-bottom: 2em;
 }
 
-#text {
+#header_name {
+	width: 100%;
+	
+}
+
+#content {
 	font-size: 1em;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	border-top: 1px solid white;
+	font-family: 'Open Sans', sans-serif;
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	height: 100%;
+	width: 50%;
+	background-color: rgba(0,0,0,.8);
+	padding: 7%;
+	overflow-y: scroll;
 }
 
 #footer {
@@ -83,28 +92,45 @@ h1 {
 </head>
 <body>
 	<div id="content">
-		<div id="name">
-		Michael&nbsp;LaGrasta
-		</div>
-		<div id="text">
-		I'm the Director of Technology for the DrJays family of companies which includes DrJays.com, DJPremium.com and Psyberian.com
-		<br><br>
-		I also like to take pictures, race cars, and make things. My projects have been featured on Instructables and exhibited at multiple Maker Faires.
-		<!--
-		<br><br>
+	<div id="name"><img src="./images/header_name.png" id="header_name"></div>
+	<!--<h1>About me:</h1>-->
+	I'm the Director of Technology for the DrJays family of companies which includes DrJays.com, DJPremium.com and Psyberian.com
+	<br><br>
+	I also like to take pictures, race cars, and make things. My projects have been featured on Instructables and exhibited at multiple Maker Faires.
+	<br><br>
+	Here are some links that might be of interest:
+	<br><br>
+	<!--<h1>Projects:</h1> -->
+	<div id="projects" class="rounded">
 		<table>
-		<td><img src="./images/desk_on.jpg" height="150"></td><td>My desk</td>
-		</table>
-		-->
-		<br><br>
-		<div id="footer">
-			<a href="http://twitter.com/mnlagrasta" target="_blank"><img src="./images/twitter.png" height='48' width='48'></a>
-			<a href="http://www.linkedin.com/pub/michael-lagrasta/2b/ba4/19a" target="_blank"><img src="./images/linkedin.png" height='48' width='48'></a>
-			<a href="http://www.youtube.com/user/mnlagrasta/videos" target="_blank"><img src="./images/youtube.png" height='48' width='48'></a>
-			<a href="https://github.com/mnlagrasta" target="_blank"><img src="./images/github.png" height='52' width='52'></a>
-			<a href="http://www.instructables.com/member/lagrasta/" target="_blank"><img src="./images/instructables.png" height='48' width='48'></a>
-		</div>
-		</div>
+			<tr>
+				<th><img src="./images/desklights2.jpg" width="150em" class="rounded"></th>
+				<td>Desklights<br>An experiment in ambient information. 160 LEDs controlled over the network to provide system and event notifications.</td>
+			</tr>
+			<tr>
+				<th><img src="./images/desklights.jpg" width="150em" class="rounded"></th>
+				<td>Desklights<br>The original project.</td>
+			</tr>
+			<tr>
+				<th><img src="./images/yapcna_2016_thumb.jpg" width="150em" class="rounded"></th>
+				<td>The video of my five minute lightning talk <a href="https://youtu.be/s8BvPwkvBEI">"How to improve your Perl code in just 16 years"</a> from The Perl Conference (YPAC::NA) 2016. The slides can be found <a href="./talks/mnl_yapc_2016.pdf">here</a>.</td>
+			</tr>
+			<tr>
+				<th><img src="./images/pds.jpg" width="150em" class="rounded"></th>
+				<td>Racing</td>
+			</tr>
+		</table>		
+	</div>
+	<!--<h1>Find out more:</h1>-->
+	<br><br>
+	And more here:<br>
+	<span id="footer">
+		<a href="http://twitter.com/mnlagrasta" target="_blank"><img src="./images/twitter.png" height='48' width='48'></a>
+		<a href="http://www.linkedin.com/pub/michael-lagrasta/2b/ba4/19a" target="_blank"><img src="./images/linkedin.png" height='48' width='48'></a>
+		<a href="http://www.youtube.com/user/mnlagrasta/videos" target="_blank"><img src="./images/youtube.png" height='48' width='48'></a>
+		<a href="https://github.com/mnlagrasta" target="_blank"><img src="./images/github.png" height='52' width='52'></a>
+		<a href="http://www.instructables.com/member/lagrasta/" target="_blank"><img src="./images/instructables.png" height='48' width='48'></a>
+	</span>
 	</div>
 </body>
 </html>
