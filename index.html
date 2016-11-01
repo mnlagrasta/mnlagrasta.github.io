@@ -12,73 +12,64 @@
 
 	    <style type="text/css">
             body {
-                        background: no-repeat fixed;
-                        background-repeat: no-repeat;
-                        -webkit-background-size: cover;
-                        -moz-background-size: cover;
-                        -o-background-size: cover;
-                        background-size: cover;
-                        margin: 0px;
-                        background-image: url('images/bg0.jpg');
-						color: #dddddd;
+                        font-family: 'Open Sans', sans-serif;
+						color: black;
+						background-color: white;
+						text-align: center;
                 }
                         
                 a {
-                        color: white;
                 }
-                        
+                
                 .rounded {
                         border-radius: 8px;
                 }
-                        
-                #about {
-                        padding: 2em;
-                }
-                        
-                #projects {
-                        _width: 100%;
-                        padding: .25em;
-                        margin: 0;
-                        text-align: center;
-                        background-color: black;
-                }
-                        
-                #projects img {
-                        margin: 0;
-                        padding: 0;
-                        width: 49%;
-                        min-width: 200px;
-                }
 
-                #name {
-                        color: 00AAFF;
-                        text-align: center;
+				#ml_logo {
+					width: 30%;
+					height: auto;
+				}
+                        
+                .about {
+					width: 80%;
+					margin: auto;
+					padding-top: 2%;
                 }
+				
+				.about_photo {
+					width: 100%;
+					height: auto;
+				}
+				
+				.about_left {
+					float: left;
+					width: 20%;
+					vertical-align: text-top;
+				}
+				
+				.about_right {
+					width: 70%;
+					float: left;
+					text-align: left;
+					vertical-align: top;
+					padding-left: 5%;
+				}
+								
+				.out_icon {
+					width: 10%;
+					height: auto;
+				}
                 
-                #header_name {
-                        width: 100%;
-                }
-                        
-                #content {
-                        font-size: 1em;
-                        font-family: 'Open Sans', sans-serif;
-                        position: absolute;
-                        top: 0%;
-                        right: 0%;
-                        height: 100%;
-                        width: 60%;
-                        background-color: rgba(0,0,0,.8);
-                        padding: 2.5%;
-                        padding-right: 1%;
-                        overflow-y: scroll;
-                }
-                        
-                #footer {
-                        padding: 2em;
-                        text-align: center;
-                        bottom: 0%;
-                        position: relative;
-                }
+				.clear {
+					clear: both;
+					height: 20%;
+				}
+				
+				.project_thumb {
+					width: 32%;
+					height: auto;
+				}
+
 		</style>
 
 		<script type="text/javascript">
@@ -99,53 +90,40 @@
 </head>
 
 <body>
-    <div id="content">
-        <div id="name"><img src="./images/header_name.png" id="header_name" alt="Michael La Grasta, IT Director + Coder + Maker"></div>
+	<object type="image/svg+xml" data="./images/ml_logo.svg" id="ml_logo"></object>
+	<div class="clear">&nbsp;</div>
+	<div class="about">
+		<a href="http://twitter.com/mnlagrasta" target="_blank"><object type="image/svg+xml" data="./images/twitter_circle.svg" class="out_icon" alt="Twitter.com icon"></object></a>
+		<a href="http://www.linkedin.com/pub/michael-lagrasta/2b/ba4/19a" target="_blank"><object type="image/svg+xml" data="./images/linkedin_circle.svg" class="out_icon" alt="LinkedIn.com icon"></object></a>
+		<a href="http://www.youtube.com/user/mnlagrasta/videos" target="_blank"><object type="image/svg+xml" data="./images/youtube_circle.svg" class="out_icon" alt="YouTube icon"></object></a>
+		<a href="https://github.com/mnlagrasta" target="_blank"><object type="image/svg+xml" data="./images/github_circle.svg" class="out_icon" alt="GitHub.com icon"></object></a>
+	</div>
+	<div class="clear">&nbsp;</div>
+	<div class="about">
+		<div class="about_left"><img src="./images/mnl_head.png" class="about_photo"></div>
+		<div class="about_right">
+			For over twenty-six years I have been consistently successful in development, operations, and leadership roles. This multi-faceted experience enables me to form strong professional relationships based on shared experiences and mutual respect. I communicate well with people of all levels of technical understanding and consistently create positive interdepartmental relationships. Leadership and mentoring come naturally to me and I enjoy building productive teams while supporting individual growth. I am passionate about efficiency and reliability.
+			<br><br>
+			The study of non-IT subjects, such as creative thinking, critical thinking, and communication, has provided me with valuable management tools. Additionally, I am diligent about removing ego, personal bias, and industry fads from all technical discussions and decisions.
+			<br><br>
+			I am currently the Director of Technology for the DJ Networks family of companies which includes DrJays.com, DJPremium.com and Psyberian.com. I am also available for consulting and speaking engagements in the areas of Online Retail, IT Management, and Server Side Development.
+		</div>
+	</div>
 
-        <div id="about">
-            I'm the Director of Technology for the DJ Networks family of companies which includes DrJays.com, DJPremium.com and Psyberian.com<br>
-            <br>
-            I also like to take pictures, race cars, and make things. My projects have been featured on Instructables and exhibited at multiple Maker Faires.
-        </div>
+	<div class="clear">&nbsp;</div>
 
-        <div id="projects" class="rounded">
-            <a href="https://www.youtube.com/watch?v=KVFkWWvMIpM">
-				<img src="./images/desklights2_thumb.jpg"
-					onmouseover="this.src='./images/desklights2_thumb2.jpg';"
-					onmouseout="this.src='./images/desklights2_thumb.jpg';"
-					class="rounded"
-					alt="Desklights2 Project"
-				></a>
-			<a href="https://www.youtube.com/watch?v=krvOAAYdUkw">
-				<img src="./images/desklights_thumb.jpg"
-					onmouseover="this.src='./images/desklights_thumb2.jpg';"
-					onmouseout="this.src='./images/desklights_thumb.jpg';"
-					class="rounded"
-					alt="Desklights Project"
-				></a>
-			<a href="https://youtu.be/s8BvPwkvBEI?t=1507">
-				<img src="./images/yapcna_2016_thumb.jpg"
-					onmouseover="this.src='./images/yapcna_2016_thumb2.jpg';"
-					onmouseout="this.src='./images/yapcna_2016_thumb.jpg';"
-					class="rounded"
-					alt="YAPC::NA Talk Video"
-				></a>
-			<a href="http://k0dr.com">
-				<img src="./images/k0dr_thumb.jpg"
-					onmouseover="this.src='./images/k0dr_thumb2.jpg';"
-					onmouseout="this.src='./images/k0dr_thumb.jpg';"
-					class="rounded"
-					alt="K0DR.com Logo"
-				></a>
-        </div>
+	<div class="about">
+		<div class="about_left"><object type="image/svg+xml" data="./images/k0dr_logo.svg" class="about_photo"></object></div>
+		<div class="about_right">
+		I also like to take pictures, race cars, and make things. My projects have been featured on Instructables and exhibited at multiple Maker Faires.
+		<br><br>
+		Project details, build logs, links, and more can be found at k0dr.com
+		<br><br>
+		<img src="./images/desklights2_thumb.jpg" class="project_thumb">
+		<img src="./images/desklights_thumb.jpg" class="project_thumb">
+		<img src="./images/yapcna_2016_thumb.jpg" class="project_thumb">
+		</div>
+	</div>
 
-        <div id="footer">
-            <a href="http://twitter.com/mnlagrasta" target="_blank"><img src="./images/twitter.png" height='48' width='48' alt="Twitter.com icon"></a>
-			<a href="http://www.linkedin.com/pub/michael-lagrasta/2b/ba4/19a" target="_blank"><img src="./images/linkedin.png" height='48' width='48' alt="LinkedIn.com icon"></a>
-			<a href="http://www.youtube.com/user/mnlagrasta/videos" target="_blank"><img src="./images/youtube.png" height='48' width='48' alt="YouTube icon"></a>
-			<a href="https://github.com/mnlagrasta" target="_blank"><img src="./images/github.png" height='48' width='48' alt="GitHub.com icon"></a>
-			<a href="http://www.instructables.com/member/lagrasta/" target="_blank"><img src="./images/instructables.png" height='48' width='48' alt="Instructables icon"></a>
-        </div>
-    </div>
 </body>
 </html>
